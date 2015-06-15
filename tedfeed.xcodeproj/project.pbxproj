@@ -14,6 +14,10 @@
 		3B19BC0F1B257E2E00167E9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B19BC0E1B257E2E00167E9B /* Images.xcassets */; };
 		3B19BC121B257E2E00167E9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B19BC101B257E2E00167E9B /* LaunchScreen.xib */; };
 		3B19BC1E1B257E2E00167E9B /* tedfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19BC1D1B257E2E00167E9B /* tedfeedTests.m */; };
+		3B19BC281B257FE400167E9B /* TedFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19BC271B257FE400167E9B /* TedFeed.m */; };
+		3B19BC2B1B25815A00167E9B /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19BC2A1B25815A00167E9B /* Parser.m */; };
+		3B7373571B28372400F11394 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7373561B28372400F11394 /* DetailViewController.m */; };
+		3BE9AAED1B2C6BD30068077D /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9AAEC1B2C6BD30068077D /* ImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,16 @@
 		3B19BC171B257E2E00167E9B /* tedfeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tedfeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B19BC1C1B257E2E00167E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B19BC1D1B257E2E00167E9B /* tedfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tedfeedTests.m; sourceTree = "<group>"; };
+		3B19BC271B257FE400167E9B /* TedFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TedFeed.m; sourceTree = "<group>"; };
+		3B19BC291B25800400167E9B /* TedFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TedFeed.h; sourceTree = "<group>"; };
+		3B19BC2A1B25815A00167E9B /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		3B19BC2C1B25816800167E9B /* Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		3B7373551B28372400F11394 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3B7373561B28372400F11394 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3BE9AAEB1B2C6BD30068077D /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		3BE9AAEC1B2C6BD30068077D /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		3BE9AAEF1B2C72450068077D /* testCLass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testCLass.h; sourceTree = "<group>"; };
+		3BE9AAF01B2C72450068077D /* testCLass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCLass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,8 @@
 		3B19BBF51B257E2E00167E9B = {
 			isa = PBXGroup;
 			children = (
+				3BE9AAEE1B2C72230068077D /* testlasses */,
+				3BAF3EB31B26E6B600167468 /* testclasses */,
 				3B19BC001B257E2E00167E9B /* tedfeed */,
 				3B19BC1A1B257E2E00167E9B /* tedfeedTests */,
 				3B19BBFF1B257E2E00167E9B /* Products */,
@@ -81,10 +97,8 @@
 		3B19BC001B257E2E00167E9B /* tedfeed */ = {
 			isa = PBXGroup;
 			children = (
-				3B19BC051B257E2E00167E9B /* AppDelegate.h */,
-				3B19BC061B257E2E00167E9B /* AppDelegate.m */,
-				3B19BC081B257E2E00167E9B /* ViewController.h */,
-				3B19BC091B257E2E00167E9B /* ViewController.m */,
+				3BE9AAE91B2C688E0068077D /* Controler */,
+				3BE9AAE71B2C681E0068077D /* Model */,
 				3B19BC0B1B257E2E00167E9B /* Main.storyboard */,
 				3B19BC0E1B257E2E00167E9B /* Images.xcassets */,
 				3B19BC101B257E2E00167E9B /* LaunchScreen.xib */,
@@ -96,6 +110,8 @@
 		3B19BC011B257E2E00167E9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B19BC051B257E2E00167E9B /* AppDelegate.h */,
+				3B19BC061B257E2E00167E9B /* AppDelegate.m */,
 				3B19BC021B257E2E00167E9B /* Info.plist */,
 				3B19BC031B257E2E00167E9B /* main.m */,
 			);
@@ -117,6 +133,46 @@
 				3B19BC1C1B257E2E00167E9B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BAF3EB31B26E6B600167468 /* testclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = testclasses;
+			sourceTree = "<group>";
+		};
+		3BE9AAE71B2C681E0068077D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B19BC271B257FE400167E9B /* TedFeed.m */,
+				3B19BC291B25800400167E9B /* TedFeed.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3BE9AAE91B2C688E0068077D /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				3B19BC2A1B25815A00167E9B /* Parser.m */,
+				3B19BC2C1B25816800167E9B /* Parser.h */,
+				3B19BC081B257E2E00167E9B /* ViewController.h */,
+				3B19BC091B257E2E00167E9B /* ViewController.m */,
+				3B7373551B28372400F11394 /* DetailViewController.h */,
+				3B7373561B28372400F11394 /* DetailViewController.m */,
+				3BE9AAEB1B2C6BD30068077D /* ImageDownloader.h */,
+				3BE9AAEC1B2C6BD30068077D /* ImageDownloader.m */,
+			);
+			name = Controler;
+			sourceTree = "<group>";
+		};
+		3BE9AAEE1B2C72230068077D /* testlasses */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9AAEF1B2C72450068077D /* testCLass.h */,
+				3BE9AAF01B2C72450068077D /* testCLass.m */,
+			);
+			name = testlasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B19BC0A1B257E2E00167E9B /* ViewController.m in Sources */,
+				3B19BC281B257FE400167E9B /* TedFeed.m in Sources */,
 				3B19BC071B257E2E00167E9B /* AppDelegate.m in Sources */,
 				3B19BC041B257E2E00167E9B /* main.m in Sources */,
+				3B19BC2B1B25815A00167E9B /* Parser.m in Sources */,
+				3BE9AAED1B2C6BD30068077D /* ImageDownloader.m in Sources */,
+				3B7373571B28372400F11394 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +476,7 @@
 				3B19BC231B257E2E00167E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B19BC241B257E2E00167E9B /* Build configuration list for PBXNativeTarget "tedfeedTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +485,7 @@
 				3B19BC261B257E2E00167E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
